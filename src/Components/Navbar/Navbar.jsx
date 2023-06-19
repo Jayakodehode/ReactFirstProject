@@ -1,6 +1,6 @@
 import "./StyleNavbar.css";
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">

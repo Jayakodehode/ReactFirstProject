@@ -1,6 +1,8 @@
 import "./App.css";
 import { Article } from "./Components/Article";
 import { Navbar } from "./Components/Navbar/Navbar";
+import { ArticleId } from "./assets/ArticleListArray";
+import { Counter, Searchfield } from "./Components/Counter";
 
 const articles = [
   {
@@ -39,7 +41,9 @@ export default function App() {
       <Navbar />
       <main>
         <Article {...articleObject} />
-        articles.map((article) => {console.log(article.id)});
+        <ArticleId />
+        <Counter />
+        <Searchfield />
       </main>
       <footer>
         <h1> footer</h1>
